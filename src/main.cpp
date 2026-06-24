@@ -1,4 +1,6 @@
 #include <iostream>
+#include "../include/parking.h"
+
 using namespace std;
 
 int main()
@@ -7,8 +9,8 @@ int main()
 
     do
     {
-        cout << "=========================\n";
-        cout << " SMART PARKING SYSTEM\n";
+        cout << "\n=========================\n";
+        cout << "   SMART PARKING SYSTEM\n";
         cout << "=========================\n";
         cout << "1. Kendaraan Masuk\n";
         cout << "2. Kendaraan Keluar\n";
@@ -18,6 +20,19 @@ int main()
         cout << "0. Keluar\n";
         cout << "Pilih : ";
         cin >> pilih;
+
+        switch (pilih)
+        {
+            case 1:
+                kendaraanMasuk();
+                break;
+            case 0:
+                cout << "\nTerima kasih telah menggunakan Smart Parking System.\n";
+                break;
+
+            default:
+                cout << "\nPilihan tidak valid!\n";
+        }
 
     } while (pilih != 0);
 
