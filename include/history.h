@@ -19,5 +19,7 @@ void tambahRiwayat(string platNomor,
                    string jenisKendaraan,
                    string jamMasuk,
                    string jamKeluar);
+                   
+ void tampilRiwayat();                  
 
 #endif

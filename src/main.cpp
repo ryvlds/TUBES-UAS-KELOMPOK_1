@@ -29,6 +29,16 @@ int main()
             tambahRiwayat("Z1234AB", "Motor", "08:00", "10:00");
             cout << "Riwayat berhasil ditambahkan.\n";
             break;
+        case 7:
+            tampilRiwayat();
+            break;
+
+        case 0:
+            cout << "Terima kasih.\n";
+            break;
+
+        default:
+            cout << "Menu tidak tersedia.\n";
         }
 
     } while (pilih != 0);
