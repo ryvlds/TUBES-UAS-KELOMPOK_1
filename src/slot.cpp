@@ -28,4 +28,30 @@ void tampilSlot()
 
         cout << endl;
     }
+        
+
+    
 }
+void cariSlotKosong()
+{
+    cout << "\n=== SLOT KOSONG ===\n";
+
+    bool ditemukan = false;
+
+    for(int i = 0; i < 6; i++)
+    {
+        if(!slotParkir[i])
+        {
+            cout << "A" << i + 1 << endl;
+            ditemukan = true;
+        }
+    }
+
+    if(!ditemukan)
+    {
+        cout << "Tidak ada slot kosong.\n";
+    }
+}
+
+
+

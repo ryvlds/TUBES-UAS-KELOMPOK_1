@@ -2,5 +2,6 @@
 #define SLOT_H
 
 void tampilSlot();
+void cariSlotKosong();
 
 #endif

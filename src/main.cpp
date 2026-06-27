@@ -28,7 +28,9 @@ int main()
             case 4:
                 tampilSlot();
                 break;
-
+            case 5:
+                 cariSlotKosong();
+                break;
             case 0:
                 cout << "\nTerima kasih telah menggunakan Smart Parking System.\n";
                 break;
