@@ -3,8 +3,6 @@
 
 #include <iostream>
 #include <vector>
-#include <string>
-
 using namespace std;
 
 struct Kendaraan {
@@ -18,5 +16,6 @@ extern vector<Kendaraan> daftarParkir;
 
 // Fungsi
 void kendaraanMasuk();
+void kendaraanKeluar();
 
 #endif

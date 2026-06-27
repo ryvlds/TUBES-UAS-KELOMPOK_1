@@ -29,3 +29,33 @@ void kendaraanMasuk() {
 
     cout << "\nKendaraan berhasil ditambahkan.\n";
 }
+// Kendaraan Keluar
+void kendaraanKeluar() {
+    string plat;
+    bool ditemukan = false;
+
+    cout << "\n=== KENDARAAN KELUAR ===\n";
+
+    cin.ignore();
+
+    cout << "Masukkan Nomor Polisi : ";
+    getline(cin, plat);
+
+    for (int i = 0; i < daftarParkir.size(); i++) {
+
+        if (daftarParkir[i].noPolisi == plat) {
+
+            cout << "Jam Keluar : ";
+            getline(cin, daftarParkir[i].jamKeluar);
+
+            cout << "\nKendaraan keluar berhasil dicatat.\n";
+
+            ditemukan = true;
+            break;
+        }
+    }
+
+    if (!ditemukan) {
+        cout << "Kendaraan tidak ditemukan.\n";
+    }
+}
