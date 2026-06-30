@@ -19,6 +19,7 @@ void tambahRiwayat(
     data.jamKeluar = jamKeluar;
 
     riwayatParkir.push(data);
+    cout << "\nRiwayat berhasil ditambahkan.\n";
 }
 
 void tampilRiwayat()
@@ -37,11 +38,11 @@ void tampilRiwayat()
     {
         RiwayatParkir data = temp.top();
 
-        cout << data.platNomor << " | "
-             << data.jenisKendaraan << " | "
-             << data.jamMasuk << " | "
-             << data.jamKeluar << endl;
-
+        cout << "Plat Nomor      : " << data.platNomor << endl;
+        cout << "Jenis Kendaraan : " << data.jenisKendaraan << endl;
+        cout << "Jam Masuk       : " << data.jamMasuk << endl;
+        cout << "Jam Keluar      : " << data.jamKeluar << endl;
+        cout << "-----------------------------" << endl;
         temp.pop();
     }
 }
