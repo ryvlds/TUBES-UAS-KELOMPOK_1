@@ -1,4 +1,7 @@
 #include <iostream>
+#include "../include/parking.h"
+#include "../include/slot.h"
+#include "../include/history.h"
 using namespace std;
 
 int main()
@@ -12,12 +15,53 @@ int main()
         cout << "=========================\n";
         cout << "1. Kendaraan Masuk\n";
         cout << "2. Kendaraan Keluar\n";
-        cout << "3. Lihat Slot Parkir\n";
-        cout << "4. Cari Slot Kosong\n";
-        cout << "5. Riwayat Parkir\n";
+        cout << "3. Tampilkan Kendaraan\n";
+        cout << "4. Lihat Slot Parkir\n";
+        cout << "5. Cari Slot Kosong\n";
+        cout << "6. Tambah Riwayat Parkir\n";
+        cout << "7. Tampilkan Riwayat Parkir\n";
         cout << "0. Keluar\n";
-        cout << "Pilih : ";
+        cout << "=====================================\n";
+        cout << "Pilih Menu : ";
         cin >> pilih;
+
+        switch (pilih)
+        {
+        case 1:
+            kendaraanMasuk();
+            break;
+
+        case 2:
+            kendaraanKeluar();
+            break;
+
+        case 3:
+            tampilKendaraan();
+            break;
+
+        case 4:
+            tampilSlot();
+            break;
+
+        case 5:
+            cariSlotKosong();
+            break;
+
+        case 6:
+            tambahRiwayat();
+            break;
+
+        case 7:
+            tampilRiwayat();
+            break;
+
+        case 0:
+            cout << "\nTerima kasih telah menggunakan Smart Parking System.\n";
+            break;
+
+        default:
+            cout << "\nPilihan tidak tersedia!\n";
+        }
 
     } while (pilih != 0);
 
