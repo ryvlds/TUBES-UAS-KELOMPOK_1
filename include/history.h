@@ -1,10 +1,11 @@
 #ifndef HISTORY_H
 #define HISTORY_H
+
 #include <string>
 #include <stack>
 
 using namespace std;
-//struct riwayat parkir
+
 struct RiwayatParkir
 {
     string platNomor;
@@ -14,12 +15,9 @@ struct RiwayatParkir
 };
 
 extern stack<RiwayatParkir> riwayatParkir;
-//tambah riwayat
-void tambahRiwayat(string platNomor,
-                   string jenisKendaraan,
-                   string jamMasuk,
-                   string jamKeluar);
-                   
- void tampilRiwayat();                  
+//tambah riwayat parkir
+void tambahRiwayat();
+//tampilkan riwayat parkir
+void tampilRiwayat();
 
 #endif
