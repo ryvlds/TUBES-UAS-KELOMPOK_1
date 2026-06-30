@@ -1,4 +1,5 @@
 #include "../include/parking.h"
+#include "../include/history.h"
 #include <iostream>
 #include <vector>
 #include <string>
@@ -47,6 +48,15 @@ void kendaraanKeluar() {
 
             cout << "Jam Keluar : ";
             getline(cin, daftarParkir[i].jamKeluar);
+
+            tambahRiwayat(
+                daftarParkir[i].noPolisi,
+                daftarParkir[i].jenisKendaraan,
+                daftarParkir[i].jamMasuk,
+                daftarParkir[i].jamKeluar
+            );
+
+            daftarParkir.erase(daftarParkir.begin() + i);
 
             cout << "\nKendaraan keluar berhasil dicatat.\n";
 

@@ -1,27 +1,22 @@
 #include <iostream>
 #include "../include/slot.h"
+#include "../include/parking.h"
 
 using namespace std;
 
-// true = terisi, false = kosong
-bool slotParkir[6] = {
-    false,  
-    true,   
-    false,  
-    true,   
-    false,  
-    false   
-};
+const int TOTAL_SLOT = 6;
 
 void tampilSlot()
 {
     cout << "\n=== DAFTAR SLOT PARKIR ===\n";
 
-    for(int i = 0; i < 6; i++)
+    int jumlahTerisi = daftarParkir.size();
+
+    for(int i = 0; i < TOTAL_SLOT; i++)
     {
         cout << "A" << i + 1 << " - ";
 
-        if(slotParkir[i])
+        if(i < jumlahTerisi)
             cout << "Terisi";
         else
             cout << "Kosong";
@@ -32,24 +27,23 @@ void tampilSlot()
 
     
 }
+
 void cariSlotKosong()
 {
     cout << "\n=== SLOT KOSONG ===\n";
 
-    bool ditemukan = false;
+    int jumlahTerisi = daftarParkir.size();
 
-    for(int i = 0; i < 6; i++)
-    {
-        if(!slotParkir[i])
-        {
-            cout << "A" << i + 1 << endl;
-            ditemukan = true;
-        }
-    }
-
-    if(!ditemukan)
+    if(jumlahTerisi == TOTAL_SLOT)
     {
         cout << "Tidak ada slot kosong.\n";
+        return;
+        
+    }
+
+    for (int i = jumlahTerisi; i < TOTAL_SLOT; i++)
+    {
+        cout << "A" << i + 1 << endl;
     }
 }
 

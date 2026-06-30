@@ -18,8 +18,7 @@ int main()
         cout << "3. Tampilkan Kendaraan\n";
         cout << "4. Lihat Slot Parkir\n";
         cout << "5. Cari Slot Kosong\n";
-        cout << "6. Tambah Riwayat Parkir\n";
-        cout << "7. Tampilkan Riwayat Parkir\n";
+        cout << "6. Tampilkan Riwayat Parkir\n";
         cout << "0. Keluar\n";
         cout << "=====================================\n";
         cout << "Pilih Menu : ";
@@ -36,7 +35,7 @@ int main()
             break;
 
         case 3:
-            tampilKendaraan();
+            tampilkanKendaraan();
             break;
 
         case 4:
@@ -48,10 +47,6 @@ int main()
             break;
 
         case 6:
-            tambahRiwayat();
-            break;
-
-        case 7:
             tampilRiwayat();
             break;
 
