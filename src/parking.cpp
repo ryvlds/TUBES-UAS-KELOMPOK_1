@@ -59,3 +59,29 @@ void kendaraanKeluar() {
         cout << "Kendaraan tidak ditemukan.\n";
     }
 }
+// Tampilkan Kendaraan
+void tampilkanKendaraan() {
+
+    cout << "\n=== DAFTAR KENDARAAN ===\n";
+
+    if (daftarParkir.empty()) {
+        cout << "Belum ada kendaraan.\n";
+        return;
+    }
+
+    for (int i = 0; i < daftarParkir.size(); i++) {
+
+        cout << "\nData Ke-" << i + 1 << endl;
+        cout << "Nomor Polisi   : "
+             << daftarParkir[i].noPolisi << endl;
+
+        cout << "Jenis Kendaraan: "
+             << daftarParkir[i].jenisKendaraan << endl;
+
+        cout << "Jam Masuk      : "
+             << daftarParkir[i].jamMasuk << endl;
+
+        cout << "Jam Keluar     : "
+             << daftarParkir[i].jamKeluar << endl;
+    }
+}

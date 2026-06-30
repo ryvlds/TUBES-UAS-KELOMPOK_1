@@ -31,6 +31,9 @@ int main()
                  case 2:
                 kendaraanKeluar();
                 break;
+                 case 3:
+                tampilkanKendaraan();
+                break;
             case 0:
                 cout << "\nTerima kasih telah menggunakan Smart Parking System.\n";
                 break;

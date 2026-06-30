@@ -17,5 +17,6 @@ extern vector<Kendaraan> daftarParkir;
 // Fungsi
 void kendaraanMasuk();
 void kendaraanKeluar();
+void tampilkanKendaraan();
 
 #endif
