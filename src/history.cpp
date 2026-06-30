@@ -5,27 +5,20 @@ using namespace std;
 
 stack<RiwayatParkir> riwayatParkir;
 
-void tambahRiwayat()
+void tambahRiwayat(
+    string platNomor,
+    string jenisKendaraan,
+    string jamMasuk,
+    string jamKeluar)
 {
     RiwayatParkir data;
 
-    cout << "\n===== TAMBAH RIWAYAT PARKIR =====\n";
-
-    cout << "Plat Nomor       : ";
-    cin >> data.platNomor;
-
-    cout << "Jenis Kendaraan  : ";
-    cin >> data.jenisKendaraan;
-
-    cout << "Jam Masuk        : ";
-    cin >> data.jamMasuk;
-
-    cout << "Jam Keluar       : ";
-    cin >> data.jamKeluar;
+    data.platNomor = platNomor;
+    data.jenisKendaraan = jenisKendaraan;
+    data.jamMasuk = jamMasuk;
+    data.jamKeluar = jamKeluar;
 
     riwayatParkir.push(data);
-
-    cout << "\nRiwayat berhasil ditambahkan.\n";
 }
 
 void tampilRiwayat()

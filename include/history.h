@@ -16,7 +16,12 @@ struct RiwayatParkir
 
 extern stack<RiwayatParkir> riwayatParkir;
 //tambah riwayat parkir
-void tambahRiwayat();
+void tambahRiwayat(
+    string platNomor,
+    string jenisKendaraan,
+    string jamMasuk,
+    string jamKeluar
+);
 //tampilkan riwayat parkir
 void tampilRiwayat();
 
