@@ -10,8 +10,8 @@ int main()
 
     do
     {
-        cout << "=========================\n";
-        cout << " SMART PARKING SYSTEM\n";
+        cout << "\n=========================\n";
+        cout << "   SMART PARKING SYSTEM\n";
         cout << "=========================\n";
         cout << "1. Kendaraan Masuk\n";
         cout << "2. Kendaraan Keluar\n";
